@@ -19,6 +19,8 @@ function createWindow() {
   win = new BrowserWindow({
     width: 960,
     height: 640,
+    minWidth:960,
+    minHeight:640,
     webPreferences: {
       // Use pluginOptions.nodeIntegration, leave this alone
       // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
