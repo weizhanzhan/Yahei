@@ -21,7 +21,21 @@ const router = new VueRouter({
     },
     {
       path:'/home',
-      component:()=>import('../views/home/index.vue')
+      component:()=>import('../views/home/index.vue'),
+      children:[
+        {
+          path:'/overview',
+          component:()=>import('../views/overview/index.vue')
+        },
+        {
+          path:'/todo',
+          component:()=>import('../views/everdo/index.vue')
+        },
+        {
+          path:'/setting',
+          component:()=>import('../views/setting/index.vue')
+        }
+      ]
     },
     {
       path:'/action',
