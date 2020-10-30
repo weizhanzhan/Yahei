@@ -1,13 +1,13 @@
 <template>
   <div class="app-container">
     <div class="title">
-     <h1>Overview</h1>
+     <h3>Overview</h3>
     </div>
-    <div>
-      <v-tabs>
-        <v-tab>Item One</v-tab>
-        <v-tab>Item Two</v-tab>
-        <v-tab>Item Three</v-tab>
+    <div style="padding:0 10px">
+      <v-tabs size="mini" height="30px">
+        <v-tab class="app-tab">Item One</v-tab>
+        <v-tab class="app-tab">Item Two</v-tab>
+        <v-tab class="app-tab">Item Three</v-tab>
       </v-tabs>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <div class="title">
-      <h1>Design</h1>
+      <h3>Design</h3>
     </div>
     <div style="padding:0 10px">
       <v-tabs size="mini" height="30px" >
