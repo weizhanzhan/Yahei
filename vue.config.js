@@ -7,6 +7,9 @@
  * @FilePath: \yahei-vue\vue.config.js
  */
 module.exports = {
+  devServer: {
+    port: 1023, // 端口
+  },
   pluginOptions: {
     electronBuilder: {
       builderOptions: {

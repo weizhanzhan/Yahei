@@ -2,6 +2,7 @@
 
 import { app, protocol, BrowserWindow ,ipcMain} from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
+import './client/server'
 // import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
 const isDevelopment = process.env.NODE_ENV !== 'production'
 const autoUpdater = require('electron-updater').autoUpdater
@@ -156,4 +157,6 @@ function initUpdate() {
     sendUpdateMessage({ state: 4 })
   })
 }
+
+
 

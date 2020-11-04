@@ -17,10 +17,11 @@
         :mini-variant="miniVariant"
         :right="right"
         :permanent="permanent"
-        :src="bg"
         absolute
         dark
       >
+        <!-- :src="bg" -->
+
         <v-list
           dense
           nav
@@ -28,12 +29,13 @@
         >
           <v-list-item two-line :class="miniVariant && 'px-0'">
             <v-list-item-avatar>
-              <img src="https://zhan961023.gitee.io/zhanwei/manda.jpg">
+              <!-- <img src="https://zhan961023.gitee.io/zhanwei/manda.jpg"> -->
+              <img src="@/assets/images/avatar.jpg" alt="">
             </v-list-item-avatar>
 
             <v-list-item-content>
               <v-list-item-title>weizhanzhan</v-list-item-title>
-              <v-list-item-subtitle>挖矿者</v-list-item-subtitle>
+              <v-list-item-subtitle></v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
 
@@ -94,7 +96,7 @@ export default {
          
           { title: 'Setting', icon: 'mdi-help-box',path:'/setting' },
         ],
-        color: 'primary',
+        color: '#333460',
         colors: [
           'primary',
           'blue',

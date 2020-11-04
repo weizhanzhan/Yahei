@@ -9,19 +9,22 @@
 <template>
   <div id="app">  
    <v-app>
-      <!-- <router-link to="/home">home</router-link>
-      <router-link to="/action">action</router-link> -->
       <router-view></router-view>
    </v-app>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'App',
-
+  data(){
+    return {
+      
+    }
+  },
   mounted(){
-  
+    
   },
   methods:{
   

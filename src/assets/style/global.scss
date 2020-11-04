@@ -1,12 +1,18 @@
 .app-container{
   height: 100%;
   .title{
-    padding: 16px 24px;
+    padding: 16px 20px;
   }
   .content{
     
   }
   .app-tab{
     font-size: 12px;
+    min-width: unset;
+    padding: 0 6px;
+  }
+  .app-ul{
+    list-style: none;
+    padding: 0;
   }
 }
