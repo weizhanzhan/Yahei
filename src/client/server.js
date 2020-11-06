@@ -1,7 +1,9 @@
 const Koa = require('koa');
 const app = new Koa();
 const mongoose = require('mongoose');
+const parameter = require('koa-parameter')
 
+const routing = require('./routes/index')
 
 const db = require('./config').connectionStr
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -21,12 +23,10 @@ app.use(async (ctx, next)=> {
 });
 
 
+app.use(parameter(app))
 
-app.use(async ctx => {
-  ctx.body = {
-    name:'我是koa返回的数据'
-  };
-});
+routing(app)
+
 
 app.listen(10233,()=>{
   console.log('server is start at 10233')

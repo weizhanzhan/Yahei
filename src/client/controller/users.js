@@ -16,6 +16,7 @@ class UsersCtl {
   }
   async create(ctx) {
     ctx.status = 200
+    console.log(ctx.request)
     ctx.verifyParams({
       name: {type: 'string', required: true},
       password: {type: 'string', required: true}
