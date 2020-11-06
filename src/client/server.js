@@ -1,5 +1,6 @@
 const Koa = require('koa');
 const app = new Koa();
+const KoaBody = require('koa-body')
 const mongoose = require('mongoose');
 const parameter = require('koa-parameter')
 
@@ -22,7 +23,10 @@ app.use(async (ctx, next)=> {
   }
 });
 
-
+app.use(KoaBody({
+  multipart: true,
+ 
+}))
 app.use(parameter(app))
 
 routing(app)

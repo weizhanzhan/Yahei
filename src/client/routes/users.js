@@ -1,7 +1,7 @@
 const KoaRouter = require('koa-router')
 const jwt = require('koa-jwt')
 
-const router = new KoaRouter({prefix: '/users'})
+const router = new KoaRouter({prefix: '/api/users'})
 const {
   find, findById, create, update, del, login, checkOwer,
 } = require('../controller/users')
